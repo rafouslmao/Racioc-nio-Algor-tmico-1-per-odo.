@@ -5,7 +5,7 @@ imc = peso / (altura**2)
 formattedValue = "{:.2f}".format(imc)
 
 ## elif serve como se fosse um "se" e o else serve como um "caso contrário", ou seja, se nenhuma das condições anteriores for verdadeira, o código do else será executado.
-## para conversão em string, podemos usar o str() ou o f (format) para formatar a string, assim não precisamos converter o ano para string, e o código fica mais limpo.
+## para conversão em string, podemos usar o str() ou o f (format) para formatar a string, assim não precisamos converter o ano para string.
 
 if imc < 18.5:
     print("Você está abaixo do peso, pois seu imc é "+str(formattedValue))
@@ -21,5 +21,5 @@ else:
          print("Você tem obesidade grau 3, pois seu imc é "+str(formattedValue))
 
 ## ctrl + / para comentar ou descomentar uma linha de código.
-
-print(f"O seu IMC é {formattedValue}")
+## Formatted Value corresponde ao cálculo do IMC arrendondando os decímais e deixando apenas os primeiros dois decimais
+## LEMBRETE PQ EU ESQUEÇO -> 2 > 1 | 2 < 3 | 2 >= 2 | 2 == 2 | 2 ! 3 |
