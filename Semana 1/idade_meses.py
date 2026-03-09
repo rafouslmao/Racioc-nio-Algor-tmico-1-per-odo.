@@ -22,7 +22,7 @@ def get_valid_date_input():
     while True:
         dateStr = input("Digite sua data de nascimento (dd/mm/aaaa ou ddmmaaaa): ")
         try:
-           if "/" in date_str:
+           if "/" in dateStr:
                 day, month, year = map(int, dateStr.split('/'))
         ## caso o usuario digite a data no formato com as barras, ele entende e separa a data usando o split.   
            else:
@@ -41,5 +41,6 @@ def get_valid_date_input():
 dataNascimento = get_valid_date_input()
 idadeMeses = calcular_idade_em_meses(dataNascimento) * 12
 print(f"Sua idade em meses é: {idadeMeses} meses")            
+
 
 
