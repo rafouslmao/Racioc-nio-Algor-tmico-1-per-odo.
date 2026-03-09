@@ -20,15 +20,15 @@ def calcular_idade_em_meses(aniversario):
 
 def get_valid_date_input():
     while True:
-        date_str = input("Digite sua data de nascimento (dd/mm/aaaa ou ddmmaaaa): ")
+        dateStr = input("Digite sua data de nascimento (dd/mm/aaaa ou ddmmaaaa): ")
         try:
            if "/" in date_str:
-                day, month, year = map(int, date_str.split('/'))
+                day, month, year = map(int, dateStr.split('/'))
         ## caso o usuario digite a data no formato com as barras, ele entende e separa a data usando o split.   
            else:
-                day = int(date_str[0:2])
-                month = int(date_str[2:4])
-                year = int(date_str[4:8])
+                day = int(dateStr[0:2])
+                month = int(dateStr[2:4])
+                year = int(dateStr[4:8])
         ## caso o usuario digite a data no formato sem as barras, ele entende e separa a data os pontos sao pra indicar a posição de cada parte que ele precisa tirar, como começa do 0, o dia fica como 0:2, o mes como 2:4 e o ano como 4:8
         ## a separação funciona como 0 inicio e 2 fim então ele so pega o 0 e 1. Por isso que no mês ele comeca pedindo o 2.
            return date(year, month, day)
@@ -41,4 +41,5 @@ def get_valid_date_input():
 dataNascimento = get_valid_date_input()
 idadeMeses = calcular_idade_em_meses(dataNascimento) * 12
 print(f"Sua idade em meses é: {idadeMeses} meses")            
+
 
