@@ -43,8 +43,9 @@ def get_valid_date_input():
             print(f"Ocorreu um erro: {e}")
             sys.exit(1)
 dataNascimento = get_valid_date_input()
-idadeMeses = calcular_idade_em_meses(dataNascimento)
-print(f"Sua idade em meses é: {idadeMeses} meses")    
+idadeCerta = calcular_idade_em_meses(dataNascimento)
+print(f"Sua idade em meses é: {idadeCerta} meses")    
+
 
 
 
