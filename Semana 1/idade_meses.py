@@ -48,6 +48,15 @@ idadeCerta = calcular_idade_em_meses(dataNascimento)
 print(f"Sua idade em meses é: {idadeCerta} meses")    
 
 
+## OUTRA FORMA DE FAZER SEM IMPORTAR BIBLIOTECA
+# idade = str(input("Qual sua data de nascimento em mmyyyy? "))
+# anoAtual = 2026
+# mes = int(input("Qual o mes atual? "))
+# calcMes = (int(idade[0:2]) - mes)
+# idadeMeses = (anoAtual - int(idade[2:6])) * 12 + calcMes
+# print(f"Sua idade em meses é: {idadeMeses} meses")
+
+
 
 
 
