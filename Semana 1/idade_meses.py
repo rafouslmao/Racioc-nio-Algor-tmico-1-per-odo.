@@ -15,8 +15,12 @@ def calcular_idade_em_meses(aniversario):
 ## então quando for chamaddo o calcular_idade_em_meses, o aniversario pega a informacao do dataNascimento e entende como aniversario = date(2008, 04, 04)
 ## dai o idade = hoje.year - aniversario.year; é lido como: idade = 2026 - 2008
  hoje = date.today()
- idade = hoje.year - aniversario.year - ((hoje.month, hoje.day) < (aniversario.month, aniversario.day))
- return idade
+ anos = (hoje.year - aniversario.year)
+ meses = (hoje.month - aniversario.month)
+ idadeMeses = anos * 12 + meses
+ return idadeMeses
+ if hoje.day < aniversario.day:
+    idadeMeses -= 1
 
 def get_valid_date_input():
     while True:
@@ -39,8 +43,8 @@ def get_valid_date_input():
             print(f"Ocorreu um erro: {e}")
             sys.exit(1)
 dataNascimento = get_valid_date_input()
-idadeMeses = calcular_idade_em_meses(dataNascimento) * 12
-print(f"Sua idade em meses é: {idadeMeses} meses")            
+idadeMeses = calcular_idade_em_meses(dataNascimento)
+print(f"Sua idade em meses é: {idadeMeses} meses")    
 
 
 
