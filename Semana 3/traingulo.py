@@ -14,7 +14,7 @@ else:
 #     print("Os valores fornecidos não formam um triângulo.")
 #     a, b, c = map(float, input("Digite os lados do triângulo: ").split(','))
 
-if (a**2)+(b**2) == (c**2):
+if (a**2)+(b**2) == (c**2) or (a**2)+(c**2) == (b**2) or (b**2)+(c**2) == (a**2):
     print("Triângulo retângulo.")
 else:
     print("Não é um triângulo retângulo.")
