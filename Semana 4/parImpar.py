@@ -11,4 +11,4 @@ while contador < 10:
     contador += 1
 
 print(f"A quantidade de números pares é {par} e a quantidade de números ímpares é {impar}")
-## o numeros[contador] checka o indice da lista, q vai de 0 a 9, e dai ve se ele eh par ou impar, ta ali com menor que 10 pra quando chegar no 10 ele quebrar o loop.
+## o numeros[contador] checka o indice da lista, q vai de 0 a 9, e dai ve se ele eh par ou impar, ta ali com menor que 10 pra quando chegar no 10 ele quebra o loop.
