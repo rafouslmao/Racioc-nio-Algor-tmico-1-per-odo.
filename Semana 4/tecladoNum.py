@@ -10,6 +10,7 @@ while True:
         else:
             media = soma / contador
             print(f"A média dos números digitados foi: {media}")
+            break
     else:
         soma += num
         contador += 1
