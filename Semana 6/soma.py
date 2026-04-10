@@ -10,7 +10,7 @@ exp = ""
 for i in range(1,num+1):
     soma+=cont
     cont+=1
-    if i ==0:
+    if i ==1:
         exp = str(i)
     else:
         exp += f" + {i}"
