@@ -14,8 +14,8 @@ numerosJogador2.insert(1,dado5)
 dado6 = random.randint(1,3)
 numerosJogador2.insert(2,dado6)
 
-resultadoJogador1 = dado1+dado2+dado3
-resultadoJogador2 = dado4+dado5+dado6
+resultadoJogador1 = sum(numerosJogador1)
+resultadoJogador2 = sum(numerosJogador2)
 print(f"Dados Jogador 1: {dado1}, {dado2}, {dado3}\nDados Jogador 2: {dado4}, {dado5}, {dado6}\n{resultadoJogador1}\n{resultadoJogador2}")
 if resultadoJogador1 > resultadoJogador2:
     print("Jogador 1 venceu")
