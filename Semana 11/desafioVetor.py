@@ -12,10 +12,9 @@ while i<6:
 acertos = 0
 indice=0
 j=0
-
-while indice<7:
+while indice<6:
     while j < 6:    
-        if numerosMega == numerosApost[j]:
+        if numerosMega == (numerosApost[j]):
             acertos+=1
         j+=1
     indice+=1
