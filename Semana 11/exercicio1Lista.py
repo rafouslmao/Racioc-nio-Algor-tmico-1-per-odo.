@@ -1,17 +1,17 @@
 import random
 numerosJogador1 = []
 numerosJogador2 = []
-dado1 = random.randint(1,3)
+dado1 = random.randint(1,6)
 numerosJogador1.insert(0,dado1)
-dado2 = random.randint(1,3)
+dado2 = random.randint(1,6)
 numerosJogador1.insert(1,dado2)
-dado3 = random.randint(1,3)
+dado3 = random.randint(1,6)
 numerosJogador1.insert(2,dado3)
-dado4 = random.randint(1,3)
+dado4 = random.randint(1,6)
 numerosJogador2.insert(0,dado4)
-dado5 = random.randint(1,3)
+dado5 = random.randint(1,6)
 numerosJogador2.insert(1,dado5)
-dado6 = random.randint(1,3)
+dado6 = random.randint(1,6)
 numerosJogador2.insert(2,dado6)
 
 resultadoJogador1 = sum(numerosJogador1)
