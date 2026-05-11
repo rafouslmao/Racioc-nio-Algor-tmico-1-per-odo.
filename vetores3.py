@@ -1,3 +1,0 @@
-vetores = []
-
-print(vetores)
